@@ -1,0 +1,23 @@
+$display-font-family: 'Playfair Display', serif;
+$display-font-weight: 700;
+
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+
+$card-border-radius: .25rem;
+
+$blue:    #007BA7;
+$indigo:  #0047AB;
+$purple:  #6C3082;
+$pink:    #d63384 !default;
+$red:     #c02b21;
+$orange:  #fd7e14 !default;
+$yellow:  #ffdc00;
+$green:   #60bc78;
+$teal:    #20B2AA;
+$cyan:    #a9e3e5;
+
+$dark: #333;
+$light: #e9ecef;
+$body-bg: $dark;
+
+@import "~bootstrap";
