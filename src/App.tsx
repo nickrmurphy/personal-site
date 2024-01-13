@@ -19,9 +19,12 @@ const LINKS = [
     current: true,
   },
 ]
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
+
+// TODO: This is just a simple document for now. Over time, I plan to make the site more interactive, add blog posts powered by a CMS, etc.
 export default function App() {
   useEffect(() => {
     document.body.classList.add('bg-slate-50');
@@ -35,8 +38,8 @@ export default function App() {
           Software Engineer
         </p>
         {/* Links */}
-        <div className="max-w-screen-md mx-auto">
-          <nav className="isolate flex divide-x divide-gray-200 rounded-full m-2 border shadow-sm" aria-label="Tabs">
+        <div className="max-w-screen-md mx-auto sticky top-0">
+          <nav className="isolate flex divide-x divide-gray-200 rounded-full m-2 border shadow-sm " aria-label="Tabs">
             {LINKS.map((link, idx) => (
               <a
                 key={link.name}
@@ -60,10 +63,10 @@ export default function App() {
           <div className="max-w-prose">
             <h2 className="text-xl font-semibold">About Me</h2>
             <p className="mt-2 text-md  font-light leading-8 text-gray-600">
-              I am a Software Engineer. I learned to write code in 2016, when I self-taught with the help of The Internet. I learned to how software worked while studying at Lewis Universty to attain a Bachelor’s degree in Computer Science in 2019. I learned how to build software products in the years since my first full time job as a developer shortly after. In the coming years, I aspire to learn how to build teams and businesses.
+              I learned to write code in 2016, when I self-taught with the help of The Internet. I learned how software actually worked while studying at Lewis Universty, to attain a bachelor’s degree in Computer Science in 2019. In the years since, I learned how to build products while working full time as a developer. In the coming years, I aspire to learn how to build teams and businesses.
               <br />
               <br />
-              To give the left brain a rest and wind down the analytical and plan-oriented bits of my mind, I improvise! Improv comedy, that is. It’s a great way to support creativity and mental health, while being active in a community I love — and hopefully make a few people laugh!
+              To give the left brain a rest, I improvise. Improv comedy, that is. It’s a proven way to support creativity and mental health while being active in a community I love — and hopefully bring some people joy in the process.
             </p>
         </div>
       </div>
