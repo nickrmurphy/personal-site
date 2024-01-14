@@ -13,11 +13,11 @@ const LINKS = [
     name: 'Instagram',
     url: 'https://www.instagram.com/nickrmurphy_/',
   },
-  {
-    name: 'Blog',
-    url: '#',
-    current: true,
-  },
+  // {
+  //   name: 'Blog',
+  //   url: '#',
+  //   current: true,
+  // },
 ]
 
 function classNames(...classes: string[]) {
